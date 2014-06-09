@@ -8,10 +8,9 @@ call vundle#begin()
 
 " Let Vundle manage Vundle
 Plugin 'gmarik/vundle'
-Plugin 'kien/ctrlp.vim'
-Plugin 'vim-ruby/vim-ruby'
 
-" TODO Add other bundles here
+" My bundles
+Plugin 'kien/ctrlp.vim'
 Plugin 'flazz/vim-colorschemes'
 
 if filereadable(expand("~/.vimrc.bundles.local"))
