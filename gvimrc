@@ -1,7 +1,7 @@
 " No audible bell
 set vb
 
-colorscheme codeschool
+colorscheme Tomorrow-Night
 
 " No toolbar
 set guioptions-=T
