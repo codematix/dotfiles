@@ -74,3 +74,5 @@ fi
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+[ -s "/Users/rubyrocket/.nvm/nvm.sh" ] && . "/Users/rubyrocket/.nvm/nvm.sh" # This loads nvm 

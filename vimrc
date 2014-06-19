@@ -1,5 +1,4 @@
-" Use Vim settings, rather then Vi settings. This setting must be as early as
-" possible, as it has side effects.
+
 set nocompatible
 
 " Leader
@@ -17,6 +16,7 @@ set laststatus=2  " Always display the status line
 set autowrite     " Automatically :write before running commands
 set background=dark
 set relativenumber
+set colorcolumn=80  " display the right margin at 80 characters
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
@@ -36,6 +36,19 @@ set shiftwidth=2
 set shiftround
 set expandtab
 
+" splits to bottom and vsplits to right
+set splitbelow
+set splitright
+
+" incremental and highlight search
+set incsearch
+set hlsearch
+nmap <leader>h :nohlsearch<CR>
+
+" perform case-insensitive searches and use smart-casing
+set ignorecase
+set smartcase
+
 filetype on
 
 " Color scheme
@@ -48,13 +61,14 @@ set number
 set numberwidth=5
 
 " Display extra whitespace
-set list listchars=trail:.
+set list lcs=trail:.,tab:\|.
 
 " Get off my lawn
 "nnoremap <Left> :echoe "Use h"<CR>
 "nnoremap <Right> :echoe "Use l"<CR>
 "nnoremap <Up> :echoe "Use k"<CR>
 "nnoremap <Down> :echoe "Use j"<CR>
+map <F2> :ls<CR>
 
 " Local config
 if filereadable($HOME . "/.vimrc.local")
