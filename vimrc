@@ -17,6 +17,8 @@ set autowrite     " Automatically :write before running commands
 set background=dark
 set relativenumber
 set colorcolumn=80  " display the right margin at 80 characters
+set wildmenu      " enable better tab completion for buffer switching
+set relativenumber  " relative numbers on
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
