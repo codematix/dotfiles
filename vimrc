@@ -18,7 +18,6 @@ set background=dark
 set relativenumber
 set colorcolumn=80  " display the right margin at 80 characters
 set wildmenu      " enable better tab completion for buffer switching
-set relativenumber  " relative numbers on
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
@@ -71,6 +70,8 @@ set list lcs=trail:.,tab:\|.
 "nnoremap <Up> :echoe "Use k"<CR>
 "nnoremap <Down> :echoe "Use j"<CR>
 map <F2> :ls<CR>
+
+set nonumber relativenumber  " relative numbers on
 
 " Local config
 if filereadable($HOME . "/.vimrc.local")
