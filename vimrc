@@ -17,7 +17,6 @@ set autowrite     " Automatically :write before running commands
 set background=dark
 set relativenumber
 set colorcolumn=80  " display the right margin at 80 characters
-set wildmenu      " enable better tab completion for buffer switching
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
@@ -28,6 +27,12 @@ endif
 if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
 endif
+
+" additional overrides
+nmap <leader>pm :set paste<CR>
+nmap <leader>np :set nopaste<CR>
+
+set wildmenu      " enable better tab completion for buffer switching
 
 filetype plugin indent on
 
