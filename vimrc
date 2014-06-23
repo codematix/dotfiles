@@ -79,6 +79,9 @@ map <F2> :ls<CR>
 
 set nonumber relativenumber  " relative numbers on
 
+" ensure syntaxes are set correct
+autocmd BufNewFile,BufRead *.json set ft=javascript
+
 " Local config
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
