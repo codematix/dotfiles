@@ -20,6 +20,8 @@ Plugin 'jelera/vim-javascript-syntax'
 Plugin 'moll/vim-node'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'digitaltoad/vim-jade'
+Plugin 'fatih/vim-go'
+Plugin 'dart-lang/dart-vim-plugin'
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
