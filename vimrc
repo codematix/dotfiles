@@ -16,7 +16,7 @@ set laststatus=2  " Always display the status line
 set autowrite     " Automatically :write before running commands
 set background=dark
 set relativenumber
-set colorcolumn=80  " display the right margin at 80 characters
+set colorcolumn=120  " display the right margin at 80 characters
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
@@ -60,7 +60,7 @@ filetype on
 " Color scheme
 set t_Co=256
 colorscheme Tomorrow-Night
-highlight NonText guibg=#060606
+"highlight NonText guibg=#060606
 highlight Folded  guibg=#0A0A0A guifg=#9090D0
 
 " Numbers
@@ -81,8 +81,11 @@ set nonumber relativenumber  " relative numbers on
 
 " ensure syntaxes are set correct
 autocmd BufNewFile,BufRead *.json set ft=javascript
+autocmd BufNewFile,BufRead Vagrantfile set ft=ruby
 
 " Local config
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
 endif
+
+let g:go_disable_autoinstall = 1
