@@ -76,3 +76,4 @@ fi
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 [ -s "/Users/rubyrocket/.nvm/nvm.sh" ] && . "/Users/rubyrocket/.nvm/nvm.sh" # This loads nvm 
+[[ -s "/home/codematix/.gvm/scripts/gvm" ]] && source "/home/codematix/.gvm/scripts/gvm"
