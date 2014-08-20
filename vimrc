@@ -82,6 +82,7 @@ set nonumber relativenumber  " relative numbers on
 " ensure syntaxes are set correct
 autocmd BufNewFile,BufRead *.json set ft=javascript
 autocmd BufNewFile,BufRead Vagrantfile set ft=ruby
+autocmd BufNewFile,BufRead *.less set ft=css
 
 " Local config
 if filereadable($HOME . "/.vimrc.local")
