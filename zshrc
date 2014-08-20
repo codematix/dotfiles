@@ -64,7 +64,7 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$PATH"
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
-  export EDITOR='mvim'
+  export EDITOR='vim'
 fi
 
 # Compilation flags
@@ -75,6 +75,8 @@ fi
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
-[ -s "/Users/rubyrocket/.nvm/nvm.sh" ] && . "/Users/rubyrocket/.nvm/nvm.sh" # This loads nvm 
+[ -s "/Users/rubyrocket/.nvm/nvm.sh" ] && . "/Users/rubyrocket/.nvm/nvm.sh" # This loads nvm
 [[ -s "/home/codematix/.gvm/scripts/gvm" ]] && source "/home/codematix/.gvm/scripts/gvm"
 [[ -s "/Users/codematix/.gvm/scripts/gvm" ]] && source "/Users/codematix/.gvm/scripts/gvm"
+
+export GOPATH="~/Learning/learngo"
