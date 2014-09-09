@@ -90,3 +90,4 @@ if filereadable($HOME . "/.vimrc.local")
 endif
 
 let g:go_disable_autoinstall = 1
+let g:ctrlp_custom_ignore = '\v[\/](\.(git|hg|svn)|node_modules)$'
