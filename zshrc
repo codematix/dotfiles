@@ -73,10 +73,6 @@ fi
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
 [ -s "/Users/rubyrocket/.nvm/nvm.sh" ] && . "/Users/rubyrocket/.nvm/nvm.sh" # This loads nvm
-[[ -s "/home/codematix/.gvm/scripts/gvm" ]] && source "/home/codematix/.gvm/scripts/gvm"
-[[ -s "/Users/codematix/.gvm/scripts/gvm" ]] && source "/Users/codematix/.gvm/scripts/gvm"
 
-export GOPATH="~/Learning/learngo"
+export GOPATH="/Users/codematix/Learning/learngo"
