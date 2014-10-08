@@ -3,6 +3,12 @@ dotfiles
 
 A collection of dot files I use on my development environment
 
+Requirements
+============
+1. Mac OSX 10.9 or higher
+2. XCode installed (Command-Line tools at least)
+3. Install Homebrew - `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+
 
 Installation
 =============
