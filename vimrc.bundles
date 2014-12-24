@@ -10,23 +10,20 @@ call vundle#begin()
 Plugin 'gmarik/vundle'
 
 " My bundles
+Plugin 'pangloss/vim-javascript'
 Plugin 'kien/ctrlp.vim'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/syntastic.git'
-Plugin 'jelera/vim-javascript-syntax'
 Plugin 'moll/vim-node'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'fatih/vim-go'
-Plugin 'dart-lang/dart-vim-plugin'
 Plugin 'puppetlabs/puppet-syntax-vim'
-Plugin 'jimenezrick/vimerl'
-Plugin 'elixir-lang/vim-elixir'
-Plugin 'wting/rust.vim'
 Plugin 'cespare/vim-toml'
+Plugin 'mxw/vim-jsx'
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
