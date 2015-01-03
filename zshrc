@@ -76,3 +76,4 @@ fi
 [ -s "/Users/rubyrocket/.nvm/nvm.sh" ] && . "/Users/rubyrocket/.nvm/nvm.sh" # This loads nvm
 
 export GOPATH="/Users/codematix/Learning/learngo"
+
