@@ -77,3 +77,4 @@ fi
 
 export GOPATH="/Users/codematix/Learning/learngo"
 
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
