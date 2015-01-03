@@ -31,6 +31,7 @@ endif
 " additional overrides
 nmap <leader>pm :set paste<CR>
 nmap <leader>np :set nopaste<CR>
+nmap <C-n> :NERDTreeToggle<CR>
 
 set wildmenu      " enable better tab completion for buffer switching
 

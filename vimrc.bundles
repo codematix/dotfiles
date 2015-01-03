@@ -24,6 +24,7 @@ Plugin 'fatih/vim-go'
 Plugin 'puppetlabs/puppet-syntax-vim'
 Plugin 'cespare/vim-toml'
 Plugin 'mxw/vim-jsx'
+Plugin 'scrooloose/nerdtree'
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
