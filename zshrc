@@ -48,7 +48,7 @@ ZSH_THEME="lambda"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git common-aliases osx gitignore brew ruby rvm bundler gem rails rake nvm thor vagrant github pj vundle urltools cp node npm wd dirpersist themes colorize sublime)
+plugins=(git git-flow common-aliases osx gitignore brew ruby rvm bundler gem rails rake nvm thor vagrant github pj vundle urltools cp node npm wd dirpersist themes colorize sublime)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -77,4 +77,7 @@ fi
 
 export GOPATH="/Users/codematix/Learning/learngo"
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+export PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH"
