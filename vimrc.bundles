@@ -26,6 +26,16 @@ Plugin 'rust-lang/rust.vim'
 Plugin 'mxw/vim-jsx'
 Plugin 'elixir-lang/vim-elixir'
 
+" Needed by vim-snipmate
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+
+" Needed by vim-es6
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
+
+Plugin 'isRuslan/vim-es6'
+
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
 endif
