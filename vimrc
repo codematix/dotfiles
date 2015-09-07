@@ -60,7 +60,7 @@ filetype on
 
 " Color scheme
 set t_Co=256
-colorscheme Tomorrow-Night
+colorscheme xoria256
 "highlight NonText guibg=#060606
 highlight Folded  guibg=#0A0A0A guifg=#9090D0
 
