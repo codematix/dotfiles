@@ -48,7 +48,7 @@ ZSH_THEME="mortalscumbag"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-flow common-aliases osx gitignore brew ruby rvm bundler gem rails rake nvm thor vagrant github pj vundle urltools cp node npm wd dirpersist themes colorize sublime)
+plugins=(git git-flow common-aliases osx gitignore brew ruby rvm bundler gem rails rake nvm thor vagrant github pj vundle urltools cp node npm wd dirpersist themes colorize sublime golang)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -73,11 +73,15 @@ fi
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-[ -s "/Users/rubyrocket/.nvm/nvm.sh" ] && . "/Users/rubyrocket/.nvm/nvm.sh" # This loads nvm
-
-export GOPATH="/Users/codematix/Learning/learngo"
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
 export PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH"
+
+[[ -s "/Users/codematix/.gvm/scripts/gvm" ]] && source "/Users/codematix/.gvm/scripts/gvm"
+
+export GOPATH="$HOME/go-workspace"
+export GO15VENDOREXPERIMENT=1
+
+export GRADLE_HOME="/usr/local/lib/gradle"
+export PATH="$GRADLE_HOME/bin:$GOPATH/bin:$PATH"
+
+export NVM_DIR="/Users/codematix/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
