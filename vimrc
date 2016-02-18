@@ -40,6 +40,7 @@ filetype plugin indent on
 " Softtabs, 2 spaces
 set tabstop=2
 set shiftwidth=2
+set softtabstop=2
 set shiftround
 set expandtab
 
@@ -69,7 +70,6 @@ set number
 set numberwidth=5
 
 " Display extra whitespace
-set list lcs=trail:.,tab:\|.
 
 " Get off my lawn
 "nnoremap <Left> :echoe "Use h"<CR>
@@ -93,3 +93,11 @@ endif
 let g:go_disable_autoinstall = 1
 let g:ctrlp_custom_ignore = '\v[\/](\.(git|hg|svn)|node_modules|doc|docs|bin)$'
 let NERDTreeIgnore = ['\.pyc$', '\.beam$']
+
+let g:go_highlight_space_tab_error = 0
+let g:go_highlight_array_whitespace_error = 0
+let g:go_highlight_trailing_whitespace_error = 0
+let g:go_highlight_space_tab_error = 0
+
+" Settings for go files
+autocmd Filetype go setlocal tabstop=4 shiftwidth=4 softtabstop=4 noexpandtab
