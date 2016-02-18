@@ -18,23 +18,16 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/syntastic.git'
-Plugin 'moll/vim-node'
-Plugin 'mustache/vim-mustache-handlebars'
-Plugin 'digitaltoad/vim-jade'
-Plugin 'cespare/vim-toml'
-Plugin 'rust-lang/rust.vim'
-Plugin 'mxw/vim-jsx'
+Plugin 'fatih/vim-go'
+Plugin 'avakhov/vim-yaml'
+Plugin 'pearofducks/ansible-vim'
+Plugin 'markcornick/vim-vagrant'
 Plugin 'elixir-lang/vim-elixir'
+Plugin 'mattreduce/vim-mix'
 
 " Needed by vim-snipmate
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
-
-" Needed by vim-es6
-Plugin 'garbas/vim-snipmate'
-Plugin 'honza/vim-snippets'
-
-Plugin 'isRuslan/vim-es6'
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
