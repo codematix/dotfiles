@@ -1,7 +1,7 @@
 " No audible bell
 set vb
 
-colorscheme solarized
+colorscheme Tomorrow-Night
 
 " No toolbar
 set guioptions-=T
