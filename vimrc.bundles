@@ -10,24 +10,18 @@ call vundle#begin()
 Plugin 'gmarik/vundle'
 
 " My bundles
-Plugin 'pangloss/vim-javascript'
-Plugin 'kien/ctrlp.vim'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
-Plugin 'bling/vim-airline'
+Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-surround'
-Plugin 'scrooloose/syntastic.git'
+Plugin 'pangloss/vim-javascript'
 Plugin 'fatih/vim-go'
 Plugin 'avakhov/vim-yaml'
 Plugin 'pearofducks/ansible-vim'
 Plugin 'markcornick/vim-vagrant'
-Plugin 'elixir-lang/vim-elixir'
-Plugin 'mattreduce/vim-mix'
-
-" Needed by vim-snipmate
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
@@ -40,3 +34,11 @@ filetype on
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts=0
 let g:airline#extensions#tabline#fnamemod = ':t'
+
+" settings for syntastic
+let g:syntastic_javascript_checkers = ['eslint']
+
+" settings for vim-go
+let g:go_fmt_command = "gofmt"
+let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
+let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
