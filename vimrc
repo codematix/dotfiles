@@ -84,6 +84,7 @@ set nonumber relativenumber  " relative numbers on
 autocmd BufNewFile,BufRead *.json set ft=javascript
 autocmd BufNewFile,BufRead Vagrantfile set ft=ruby
 autocmd BufNewFile,BufRead *.less set ft=css
+autocmd BufNewFile,BufRead *.jade set filetype=jade
 
 " Local config
 if filereadable($HOME . "/.vimrc.local")

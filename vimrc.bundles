@@ -22,6 +22,8 @@ Plugin 'fatih/vim-go'
 Plugin 'avakhov/vim-yaml'
 Plugin 'pearofducks/ansible-vim'
 Plugin 'markcornick/vim-vagrant'
+Plugin 'mxw/vim-jsx'
+Plugin 'statianzo/vim-jade'
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
@@ -42,3 +44,6 @@ let g:syntastic_javascript_checkers = ['eslint']
 let g:go_fmt_command = "gofmt"
 let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
 let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
+
+" settings for vim-jsx
+let g:jsx_ext_required = 0
