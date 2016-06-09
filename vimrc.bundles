@@ -24,6 +24,7 @@ Plugin 'pearofducks/ansible-vim'
 Plugin 'markcornick/vim-vagrant'
 Plugin 'mxw/vim-jsx'
 Plugin 'statianzo/vim-jade'
+Plugin 'derekwyatt/vim-scala'
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
