@@ -92,8 +92,8 @@ if filereadable($HOME . "/.vimrc.local")
 endif
 
 let g:go_disable_autoinstall = 1
-let g:ctrlp_custom_ignore = '\v[\/](\.(git|hg|svn)|node_modules|doc|docs|bin)$'
-let NERDTreeIgnore = ['\.pyc$', '\.beam$']
+let g:ctrlp_custom_ignore = '\v[\/](\.(git|hg|svn|class$|war|jar)|node_modules|doc|docs|bin)$'
+let NERDTreeIgnore = ['\.pyc$', '\.beam$', '\.class$', '\.war$', '\.jar$']
 
 let g:go_highlight_space_tab_error = 0
 let g:go_highlight_array_whitespace_error = 0
@@ -102,3 +102,4 @@ let g:go_highlight_space_tab_error = 0
 
 " Settings for go files
 autocmd Filetype go setlocal tabstop=4 shiftwidth=4 softtabstop=4 noexpandtab
+autocmd Filetype java setlocal tabstop=4 shiftwidth=4 softtabstop=4 noexpandtab
