@@ -73,19 +73,8 @@ fi
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-export PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH"
-
-[[ -s "/Users/codematix/.gvm/scripts/gvm" ]] && source "/Users/codematix/.gvm/scripts/gvm"
-
 export GOPATH="$HOME/go-workspace"
 export GO15VENDOREXPERIMENT=1
 
 export GRADLE_HOME="/usr/local/lib/gradle"
 export PATH="$GRADLE_HOME/bin:$GOPATH/bin:$PATH"
-
-export NVM_DIR="/Users/codematix/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/Users/codematix/.sdkman"
-[[ -s "/Users/codematix/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/codematix/.sdkman/bin/sdkman-init.sh"
