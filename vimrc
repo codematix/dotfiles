@@ -99,6 +99,7 @@ let g:go_highlight_space_tab_error = 0
 let g:go_highlight_array_whitespace_error = 0
 let g:go_highlight_trailing_whitespace_error = 0
 let g:go_highlight_space_tab_error = 0
+let g:go_template_autocreate = 0
 
 " Settings for go files
 autocmd Filetype go setlocal tabstop=4 shiftwidth=4 softtabstop=4 noexpandtab
