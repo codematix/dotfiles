@@ -24,7 +24,15 @@ Plugin 'pearofducks/ansible-vim'
 Plugin 'markcornick/vim-vagrant'
 Plugin 'mxw/vim-jsx'
 Plugin 'statianzo/vim-jade'
-Plugin 'derekwyatt/vim-scala'
+Plugin 'cespare/vim-toml'
+Plugin 'tpope/vim-rails'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-cucumber'
+Plugin 'tpope/vim-haml'
+Plugin 'slim-template/vim-slim.git'
+Plugin 'elixir-lang/vim-elixir'
+Plugin 'tpope/vim-endwise'
+Plugin 'slashmili/alchemist.vim'
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
