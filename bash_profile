@@ -28,20 +28,3 @@ export SCM_CHECK=true
 
 # Load Bash It
 source $BASH_IT/bash_it.sh
-
-export GRADLE_HOME="/usr/local/lib/gradle"
-export PATH="$GRADLE_HOME/bin:$GOPATH/bin:/Applications/VMware\ Fusion.app/Contents/Library:$PATH"
-
-export NVM_DIR="/Users/codematix/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/Users/codematix/.sdkman"
-[[ -s "/Users/codematix/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/codematix/.sdkman/bin/sdkman-init.sh"
-
-export PATH="/Applications/VMware Fusion.app/Contents/Library:$PATH"
-
-[[ -s "/Users/codematix/.gvm/scripts/gvm" ]] && source "/Users/codematix/.gvm/scripts/gvm"
-export GOPATH="/Users/codematix/go-workspace"
-export PATH="$PATH:$GOPATH/bin"
-export GO15VENDOREXPERIMENT=1
