@@ -77,7 +77,7 @@ fi
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
-[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/codematix/.gvm/scripts/gvm"
+[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
 
 export GOPATH="$HOME/go-workspace"
 export GO15VENDOREXPERIMENT=1
