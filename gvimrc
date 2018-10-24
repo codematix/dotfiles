@@ -13,7 +13,7 @@ set guioptions+=c
 set guitablabel=%t
 
 if has("gui_gtk2")
-  set guifont=Ubuntu\ Mono\ 11
+  set guifont=Ubuntu\ Mono\ 12
   set lines=46 columns=185
 else
   set guifont=Monaco:h12
