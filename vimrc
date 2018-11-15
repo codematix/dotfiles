@@ -104,3 +104,6 @@ let g:go_template_autocreate = 0
 " Settings for go files
 autocmd Filetype go setlocal tabstop=4 shiftwidth=4 softtabstop=4 noexpandtab
 autocmd Filetype java setlocal tabstop=4 shiftwidth=4 softtabstop=4 noexpandtab
+
+let g:prettier#autoformat = 1
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
