@@ -25,8 +25,10 @@ brew install rcm
 On Ubuntu
 
 ``` shell
-wget https://thoughtbot.github.io/rcm/debs/rcm_1.2.3-1_all.deb
-sudo dpkg -i rcm_1.2.3-1_all.deb
+wget -qO - https://apt.thoughtbot.com/thoughtbot.gpg.key | sudo apt-key add -
+echo "deb https://apt.thoughtbot.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/thoughtbot.list
+sudo apt-get update
+sudo apt-get install rcm
 ```
 
 Step 2 - Install Vundle
