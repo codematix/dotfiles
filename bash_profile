@@ -44,3 +44,8 @@ export PATH="$PATH:$GOPATH/bin"
 export GO15VENDOREXPERIMENT=1
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+if [ -e /home/codematix/.nix-profile/etc/profile.d/nix.sh ]; then . /home/codematix/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+
+export PATH="$HOME/.poetry/bin:$PATH"
+
+export PATH="$HOME/.cargo/bin:$PATH"
