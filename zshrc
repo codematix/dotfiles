@@ -2,21 +2,13 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$PATH"
 
 [[ -s "/home/codematix/.gvm/scripts/gvm" ]] && source "/home/codematix/.gvm/scripts/gvm"
 
-export GOPATH="$HOME/go-workspace"
+export GOPATH="$HOME/.go"
 export GO15VENDOREXPERIMENT=1
 
 export PATH="$GOPATH/bin:$PATH"
-export PATH="$HOME/.cargo/bin:$PATH"
 
-# Load pyenv automatically by adding
-# the following to ~/.zshrc:
-
-export PATH="/home/codematix/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-
-. $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -68,7 +60,7 @@ ZSH_THEME="mortalscumbag"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-extras common-aliases history jsontools last-working-dir docker osx gitignore thor go golang httpie cargo mix vagrant github pj vundle urltools cp node npm pow wd dirpersist themes colorize vscode web-search yarn)
+plugins=(git git-extras common-aliases history jsontools last-working-dir docker osx gitignore thor go golang httpie mix vagrant github pj vundle urltools cp node npm pow wd dirpersist themes colorize vscode web-search yarn)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -93,7 +85,11 @@ fi
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/codematix/.sdkman"
+[[ -s "/home/codematix/.sdkman/bin/sdkman-init.sh" ]] && source "/home/codematix/.sdkman/bin/sdkman-init.sh"
